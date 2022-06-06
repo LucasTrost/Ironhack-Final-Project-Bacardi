@@ -22,26 +22,28 @@ Project Brief
 Scenario: We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. Through this work we also aim to identify trends within different countries among the most representative brands the company is producing. 
 
 
-Challenge: Given the depth of the dataset we harnessed data from external sources to ease our making informed decisions
-
-I pulled from a market study in 2015, I was to build a model that can predict the price of houses in the Seattle area. In addition, as TheAgency regards itself as a high-end real estate agency, I was tasked to explore what features exactly determine high prices.
+Challenge: Given the depth of the dataset, we harnessed data from external sources to ease decision taking. Temperature, Consumer Confidence, seasonality data and movement data were considered to build a model that could predict the sales for the Digital Commerce Channel and for the most populated countries in the EU. 
 
 Further project details such as deliverables can be found here
 
 Exploratory Data Analysis (EDA)
-To explore and understand the data I chose to use the following tools:
 
 Tableau:
-Tableau is a great tool to jump into dataset, play around, and gain insights. I spent a significant chunk of time on Tableau, creating Dashboards and stories, through which I became very familiar with the data.
+To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and other relevant information.
 
 Feel free to explore the Tableau and/or the presentation slides
 
-SQL:
+Excel:
+We worked intensively in excel adding data to the initial file, Digital Commerce Pure Playeres US EUBig5. Being the EU an already relevant market we dropped from our analysis the US market. But before that  
+
+
+
+
 Importing the data to SQL was no smooth sailing. Apparently the csv. file from the study was corrupted. In order to circumvent said problem, I exported the excel version of the data into Python, where I turned it into a DataFrame, and downloaded as a csv.
 
 This seemed to work, and I was able to get started on querying. Overall I was already pretty happy with my understanding of the data, which is why I kept querying to a minimal.
 
-For SQL query file see here
+For Excel query file see here
 
 Machine Learning Process
 Pre-Modeling
