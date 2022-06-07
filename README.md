@@ -18,27 +18,35 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
   - Conclusions
 
 
-1. Project Brief
+# 1. Project Brief
 
 We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. Through this work we also aim to identify trends within different countries among the most representative brands the company is producing. 
 
-2. Data
+# 2. Data
 
 Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. 
 Given the depth of the dataset, we harnessed data from external sources and apply some extra creativity to enhance our model predictions. Preparing our main dataframe required some previous cleaning. Being the EU an already relevant market we dropped from our analysis the US market. We also dropped some irrelevant columns, mainly using python.
 
-Following to this cleaning phase we worked thoroughly in excel adding relevant features to the dataset. Our main datasources were; Bloomberg, which we used to gather consumer confidence and temperature data. We also obtanained data from the European Comission and movement data from Facebook. Ultimately we added a seasonality feature matching the seasons of the year given the seasonality nature of the demand and sales for the industry.   
+  ### 2.2 Engineering Data
 
-Exploratory Data Analysis (EDA)
+  Following to this cleaning phase we worked thoroughly in excel adding relevant features to the dataset. Our main datasources were; Bloomberg, which we used to gather consumer confidence and temperature data. We also obtanained data from the European Comission and movement data from Facebook. Ultimately we added a seasonality feature matching the seasons of the year given the seasonality nature of the demand and sales for the industry.   
 
-To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and other relevant information.
+  ### 2.1 Exploratory Data Analysis (EDA)
+
+ To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and   other relevant information.
 
 Feel free to explore the Tableau and/or the presentation slides
 
-Further project details such as deliverables can be found here
 
+# 3. Statistical Modeling
 
-3. Statistical Modeling
+hat module is Statsmodels. It is probably my favorite Python module when I need to perform statistical calculations. This library/module is based on the SciPy Python library and it is a complete module that allows the user to perform numerous operations for statistical analysis
+
+Statistical modelling gives you the ability to asses, understand and make predictions about data
+
+he Statsmodels package allows you to perform all these analyses
+
+Time series analysis
 
 Model for estimating volume
 K-Nearest Neightbours
