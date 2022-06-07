@@ -9,69 +9,60 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 
   - Project Brief
 
-  - Exploratory Data Analysis
+  - Data
+  
+  - Statistical Modeling
 
-  - Machine Learning Process
+  - Machine Learning
 
-  - Key Take Aways
-
-
-
-Project Brief
-
-Scenario: We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. Through this work we also aim to identify trends within different countries among the most representative brands the company is producing. 
+  - Conclusions
 
 
-Challenge: Given the depth of the dataset, we harnessed data from external sources to ease decision taking. Temperature, Consumer Confidence, seasonality data and movement data were considered to build a model that could predict the sales for the Digital Commerce Channel and for the most populated countries in the EU. 
+1. Project Brief
 
-Further project details such as deliverables can be found here
+We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. Through this work we also aim to identify trends within different countries among the most representative brands the company is producing. 
+
+2. Data
+
+Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. 
+Given the depth of the dataset, we harnessed data from external sources and apply some extra creativity to enhance our model predictions. Preparing our main dataframe required some previous cleaning. Being the EU an already relevant market we dropped from our analysis the US market. We also dropped some irrelevant columns, mainly using python.
+
+Following to this cleaning phase we worked thoroughly in excel adding relevant features to the dataset. Our main datasources were; Bloomberg, which we used to gather consumer confidence and temperature data. We also obtanained data from the European Comission and movement data from Facebook. Ultimately we added a seasonality feature matching the seasons of the year given the seasonality nature of the demand and sales for the industry.   
 
 Exploratory Data Analysis (EDA)
 
-Tableau:
 To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and other relevant information.
 
 Feel free to explore the Tableau and/or the presentation slides
 
-Excel:
-We worked intensively in excel adding data to the initial file, Digital Commerce Pure Playeres US EUBig5. Being the EU an already relevant market we dropped from our analysis the US market. But before that  
+Further project details such as deliverables can be found here
+
+
+3. Statistical Modeling
+
+Model for estimating volume
+K-Nearest Neightbours
 
 
 
 
-Importing the data to SQL was no smooth sailing. Apparently the csv. file from the study was corrupted. In order to circumvent said problem, I exported the excel version of the data into Python, where I turned it into a DataFrame, and downloaded as a csv.
+4. Machine Learning Process
 
-This seemed to work, and I was able to get started on querying. Overall I was already pretty happy with my understanding of the data, which is why I kept querying to a minimal.
-
-For Excel query file see here
-
-Machine Learning Process
-Pre-Modeling
-Besides EDA there were a few necessary steps to take, in order to ensure valid results end results The most notable steps here were:
-
-Dropping columns
-One obvious column to drop straight away, was the Unknown :1 column, which was some form of indexing included in the data. Next I decided to drop the columns: id, date, lat, long as all of these would lead to heavy overfitting.
-
-I had no trouble dropping lat and long, as the combination of the two is very unique. Date was the only column I had some trouble with. In the end I decided that the data wasn't dense enough to justify keeping the column. In other words, date was quite unique, hence the benefit of keeping it did not outweigh the aspect of overfitting.
-
-Dropping outliers
-Through extensive work in Tableau I was quite confident with outliers. The only notable one, which seemed like bad data was the property worth ca. 500k, that had a number of 33 bedrooms. Price outliers or anything similar were kept.
-
-Scaling
-As our DataFrame had vastly differentiating number ranges, and consisted of only numerical columns, I decided it would be best to apply a MinMaxScaler() to the entire DataFrame.
-
-Model for estimating price
 Linear Regression Model
 I first started with a base line Linear Regressions model. After drafting two more Candidates where I played with choosing between the highly correlating columns around the size of the property (sqft_living,sqft_living15,sqft_above, etc.) and getting no real improvement in accuracy I decided to move on to the next model.
 
 K-Nearest-Neighbours Regression Model
 The base model alone showed more promising results than the previous candidates, with an increase in accuracy and a decrease in Root Mean Squared Error (RMSE).
+Pre-Modeling
+Besides EDA there were a few necessary steps to take, in order to ensure valid results end results The most notable steps here were:
 
-I noticed that yr_renovated may lead to some inaccuracies, with the model disproportionally rewarding said feature. Houses that had no renevation date received a '0' as entry in the feature.
 
-This led to two strong opposing groups: houses with, and houses without a renovation date. A grouping beforehand (assigning a value of either 2 = freshly renovated, 1 = recently renovated, 0 = not renovated/ renovated long time ago) would fix that problem.
 
-I still believed I was on to something with the correlation concept in the linear regressions model. Thus I experimented a bit, and dropping sqft_basement and sqft_above (which = sqft_living), the model improved yet again.
+
+Scaling
+As our DataFrame had vastly differentiating number ranges, and consisted of only numerical columns, I decided it would be best to apply a MinMaxScaler() to the entire DataFrame.
+
+Model for estimating volume
 
 Decision Tree Regression Model
 Already being fairly content with my KNN model, I only planned to briefly dip into decision trees. With the base model returning an accuracy of 64%, 8% worse than the KNN, I was more than happy to move on.
@@ -83,6 +74,13 @@ Random Forest Regression Model
 To determine feature importance one could've based their answer on a correlation matrix. We as a agency, however, have to keep our standards high, which is why I opted for a ensemble method of the Random Forest Regressor. I then ran the model through a inspection method, which gave me my final results. Screenshot 2022-05-12 at 17 47 27
 
 take a look at my python notebook and further anotations here
+
+  
+Organization
+Jupyter Notebooks for data exploration, visualization, analysis and machine learning model implementations.
+Tableau Public for dynamic and presentable graphics and charts.
+GitHub for repositories and data files.
+Google Slides for the presentation.
 
 Key Take Aways
 Model for estimating price:
