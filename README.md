@@ -24,7 +24,7 @@ We are working as data analysts for one of the largest privately held, family-ow
 
 # 2. Data
 
-Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. 
+Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. We are 
 Given the depth of the dataset, we harnessed data from external sources and apply some extra creativity to enhance our model predictions. Preparing our main dataframe required some previous cleaning. Being the EU an already relevant market we dropped from our analysis the US market. We also dropped some irrelevant columns, mainly using python.
 
   ### 2.2 Engineering Data
@@ -39,6 +39,8 @@ Feel free to explore the Tableau and/or the presentation slides
 
 
 # 3. Statistical Modeling
+
+The first approach to forecast volume.   
 
 hat module is Statsmodels. It is probably my favorite Python module when I need to perform statistical calculations. This library/module is based on the SciPy Python library and it is a complete module that allows the user to perform numerous operations for statistical analysis
 
