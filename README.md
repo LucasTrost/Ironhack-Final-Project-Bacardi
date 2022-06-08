@@ -27,32 +27,31 @@ We are working as data analysts for one of the largest privately held, family-ow
 Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. We are 
 Given the depth of the dataset, we harnessed data from external sources and apply some extra creativity to enhance our model predictions. Preparing our main dataframe required some previous cleaning. Being the EU an already relevant market we dropped from our analysis the US market. We also dropped some irrelevant columns, mainly using python.
 
-  ### 2.2 Engineering Data
+  ### 2.1 Data Engineering 
 
   Following to this cleaning phase we worked thoroughly in excel adding relevant features to the dataset. Our main datasources were; Bloomberg, which we used to gather consumer confidence and temperature data. We also obtanained data from the European Comission and movement data from Facebook. Ultimately we added a seasonality feature matching the seasons of the year given the seasonality nature of the demand and sales for the industry.   
 
-  ### 2.1 Exploratory Data Analysis (EDA)
+  ### 2.2 Exploratory Data Analysis (EDA)
 
  To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and   other relevant information.
-
-Feel free to explore the Tableau and/or the presentation slides
 
 
 # 3. Statistical Modeling
 
-The first approach to forecast volume.   
+For the first approach to forecast volume we used Statsmodels. The model ARIMA is capable of identifying statistical patterns and thus calculate future developments. Since the volume is heavily affected by seasonality we therefore decided to appy 
 
-hat module is Statsmodels. It is probably my favorite Python module when I need to perform statistical calculations. This library/module is based on the SciPy Python library and it is a complete module that allows the user to perform numerous operations for statistical analysis
+easonal autoregressive integrated moving average (SARIMA) model is one step different from an ARIMA model based on the concept of seasonal trends. In many time series data, frequent seasonal effects come into play
 
-Statistical modelling gives you the ability to asses, understand and make predictions about data
+ARIMA and SARIMA are both algorithms for forecasting. ARIMA takes into account the past values (autoregressive, moving average) and predicts future values based on that. SARIMA similarly uses past values but also takes into account any seasonality patterns
 
-he Statsmodels package allows you to perform all these analyses
+
 
 Time series analysis
 
 Model for estimating volume
 K-Nearest Neightbours
 
+hat module is Statsmodels. It is probably my favorite Python module when I need to perform statistical calculations. This library/module is based on the SciPy Python library and it is a complete module that allows the user to perform numerous operations for statistical analysis
 
 
 
