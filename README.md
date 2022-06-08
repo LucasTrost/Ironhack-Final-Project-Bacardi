@@ -43,12 +43,14 @@ Given the depth of the dataset, we harnessed data from external sources and appl
 Our first approach to estimate volume was through statistical models. The ARIMA model predicts future values based on past volumes. Given the seasonality patterns eexisting in this particular industry, we advanced our model to capture the concept of seasonal trends, ie. SARIMA.
 
 
+[Take a look at the python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
+
 # 4. Machine Learning Process
 
 On our next approach to estimate volume we used machine learning models. For the first estimate we used random forest model with all the features included in the dataset. On a second iteration and using a bootstrap method of this model we assesed what variables were relevant to include in the 
 a stack multiple model. By doing so we aimed to achieve the highest accuracy. Regression models used were: RandomForest, K-Nearest-Neighbours and Linear Regression models. 
 
-Take a look at the python notebook and further anotations here[https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb]
+[Take a look at the python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
 
 
   
