@@ -38,52 +38,33 @@ Given the depth of the dataset, we harnessed data from external sources and appl
 
 # 3. Statistical Modeling
 
-For the first approach to forecast volume we used Statsmodels. The model ARIMA is capable of identifying statistical patterns and thus calculate future developments. Since the volume is heavily affected by seasonality we therefore decided to appy 
-
-easonal autoregressive integrated moving average (SARIMA) model is one step different from an ARIMA model based on the concept of seasonal trends. In many time series data, frequent seasonal effects come into play
-
-ARIMA and SARIMA are both algorithms for forecasting. ARIMA takes into account the past values (autoregressive, moving average) and predicts future values based on that. SARIMA similarly uses past values but also takes into account any seasonality patterns
+Our first approach to estimate volume was through statistical models. The ARIMA model predicts future values based on past volumes. Given the seasonality patterns eexisting in this particular industry, we advanced our model to capture the concept of seasonal trends, ie. SARIMA.
 
 
+# 4. Machine Learning Process
 
-Time series analysis
+On our next approach to estimate volume we used machine learning models. We assesed the importance of our set of features learning their relevance and applied the K-Nearest Neighbors, Linear and Random Forest Regression Models. 
+ 
 
-Model for estimating volume
-K-Nearest Neightbours
+The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
 
-hat module is Statsmodels. It is probably my favorite Python module when I need to perform statistical calculations. This library/module is based on the SciPy Python library and it is a complete module that allows the user to perform numerous operations for statistical analysis
+Model to determine importance of features
 
-
-
-4. Machine Learning Process
-
-Linear Regression Model
-I first started with a base line Linear Regressions model. After drafting two more Candidates where I played with choosing between the highly correlating columns around the size of the property (sqft_living,sqft_living15,sqft_above, etc.) and getting no real improvement in accuracy I decided to move on to the next model.
-
-K-Nearest-Neighbours Regression Model
-The base model alone showed more promising results than the previous candidates, with an increase in accuracy and a decrease in Root Mean Squared Error (RMSE).
-Pre-Modeling
-Besides EDA there were a few necessary steps to take, in order to ensure valid results end results The most notable steps here were:
+Take a look at my python notebook and further anotations here
 
 
 
-
-Scaling
-As our DataFrame had vastly differentiating number ranges, and consisted of only numerical columns, I decided it would be best to apply a MinMaxScaler() to the entire DataFrame.
-
-Model for estimating volume
 
 Decision Tree Regression Model
 Already being fairly content with my KNN model, I only planned to briefly dip into decision trees. With the base model returning an accuracy of 64%, 8% worse than the KNN, I was more than happy to move on.
 
-Model to determine importance of features
-As already mentioned we, TheAgency, are quite the luxurious real-estate-agency. Thus we were especially interested in houses with a value equal to and greater than $650k. Here a simple pandas query did the trick.
+
 
 Random Forest Regression Model
 To determine feature importance one could've based their answer on a correlation matrix. We as a agency, however, have to keep our standards high, which is why I opted for a ensemble method of the Random Forest Regressor. I then ran the model through a inspection method, which gave me my final results. Screenshot 2022-05-12 at 17 47 27
 
-take a look at my python notebook and further anotations here
 
+______________________________________________________
   
 Organization
 Jupyter Notebooks for data exploration, visualization, analysis and machine learning model implementations.
