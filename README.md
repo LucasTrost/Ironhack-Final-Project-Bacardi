@@ -1,4 +1,4 @@
-# Ironhack Final-Bootcamp Project | Bacardi #
+# Ironhack Final Project | Bacardi #
 
 by Lucas Trost and Miguel Ángel Villoslada, June 2022
 
@@ -74,5 +74,5 @@ We believe that COVID-19 pandemic affected key trends driving the global beverag
 Here are the key trends driving the beverage alcohol market landscape for Bacardi:
 
 Premium brands have gained protagonism for our EU Big5 market. This indicates a consumption habit change on its own means. 
-
+etc...
 
