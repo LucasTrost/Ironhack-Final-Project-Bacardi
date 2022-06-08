@@ -7,23 +7,24 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 
 **Table of content**
 
-  - Project Brief
+  - [Project Brief](#section1)
 
-  - Data
+  - [Data](#section2)
   
-  - Statistical Modeling
+  - [Statistical Modeling](#section3)
 
-  - Machine Learning
+  - [Machine Learning](#section4)
 
-  - Tools and Organisation
+  - [Tools and Organisation](#section5)
   
-  - Conclusion
+  - [Conclusion](#section6)
   
-
+<a id='section1'></a>
 # 1. Project Brief
 
 We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. Through this work we also aim to identify trends within different countries among the most representative brands the company is producing. 
 
+<a id='section2'></a>
 # 2. Data
 
 Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries. We are 
@@ -37,14 +38,14 @@ Given the depth of the dataset, we harnessed data from external sources and appl
 
  To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and   other relevant information.
 
-
+<a id='section3'></a>
 # 3. Statistical Modeling
 
 Our first approach to estimate volume was through statistical models. The ARIMA model predicts future values based on past volumes. Given the seasonality patterns eexisting in this particular industry, we advanced our model to capture the concept of seasonal trends, ie. SARIMA.
 
-
 [Take a look at the python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
 
+<a id='section4'></a>
 # 4. Machine Learning Process
 
 On our next approach to estimate volume we used machine learning models. For the first estimate we used random forest model with all the features included in the dataset. On a second iteration and using a bootstrap method of this model we assesed what variables were relevant to include in the 
@@ -52,19 +53,21 @@ a stack multiple model. By doing so we aimed to achieve the highest accuracy. Re
 
 [Take a look at the python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
 
-
-  
+<a id='section5'></a>  
 # 5.Tools and Organization
 
-Python - Jupyter Notebooks for prediction and machine learning model implementations.
-Tableau Public and Google Slides for visualization and analysis, dynamic and presentable graphics and charts.
-Excel 
-Google Slides for the presentation.
-GitHub for repositories and data files.
+    Python - Jupyter Notebooks for prediction and machine learning model implementations.
 
+    Excel for data engineering and pre-processing
 
+    Tableau Public for visualization and analysis. Used also for the presentation (graphics)
+
+    Google Slides for presentation template and contents
+
+    GitHub for repositories and data files
+
+<a id='section6'></a> 
 # 6. Conclusion
 
+We believe that thee last three fiscal years annomalities caused by COVID-19 pandemic Key Trends Driving the Global Beverage Alcohol Industry 
 I believe the two models to be of good aid for our new office in Seattle, especially the ladder. I can see us scanning the real estate market for the determined features, and calculating a rough price range, before sending out one of our agents. Because in the end, little beats the judgement and expertise of a TheAgency's agent.
-
-
