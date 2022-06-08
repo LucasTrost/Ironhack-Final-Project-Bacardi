@@ -15,7 +15,7 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 
   - [Machine Learning](#section4)
 
-  - [Tools and Organisation](#section5)
+  - [Tools](#section5)
   
   - [Conclusion](#section6)
   
@@ -54,7 +54,7 @@ a stack multiple model. By doing so we aimed to achieve the highest accuracy. Re
 [Take a look at the python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
 
 <a id='section5'></a>  
-# 5.Tools and Organization
+# 5.Tools
 
     Python - Jupyter Notebooks for prediction and machine learning model implementations.
 
@@ -69,5 +69,10 @@ a stack multiple model. By doing so we aimed to achieve the highest accuracy. Re
 <a id='section6'></a> 
 # 6. Conclusion
 
-We believe that thee last three fiscal years annomalities caused by COVID-19 pandemic Key Trends Driving the Global Beverage Alcohol Industry 
-I believe the two models to be of good aid for our new office in Seattle, especially the ladder. I can see us scanning the real estate market for the determined features, and calculating a rough price range, before sending out one of our agents. Because in the end, little beats the judgement and expertise of a TheAgency's agent.
+We believe that COVID-19 pandemic affected key trends driving the global beverage alcohol industry. The industry has proven itself to be one of the most crisis-proof consumer goods categories at a time of significant disruption. Even though consumers are very keen returning to the on-trade channels digital Commerce has emerged in strength. 
+
+Here are the key trends driving the beverage alcohol market landscape for Bacardi:
+
+Premium brands have gained protagonism for our EU Big5 market. This indicates a consumption habit change on its own means. 
+
+
