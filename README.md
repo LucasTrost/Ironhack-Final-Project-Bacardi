@@ -15,8 +15,10 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 
   - Machine Learning
 
-  - Conclusions
-
+  - Tools and Organisation
+  
+  - Conclusion
+  
 
 # 1. Project Brief
 
@@ -43,41 +45,23 @@ Our first approach to estimate volume was through statistical models. The ARIMA 
 
 # 4. Machine Learning Process
 
-On our next approach to estimate volume we used machine learning models. We assesed the importance of our set of features learning their relevance and applied the K-Nearest Neighbors, Linear and Random Forest Regression Models. 
- 
+On our next approach to estimate volume we used machine learning models. For the first estimate we used random forest model with all the features included in the dataset. On a second iteration and using a bootstrap method of this model we assesed what variables were relevant to include in the 
+a stack multiple model. By doing so we aimed to achieve the highest accuracy. Regression models used were: RandomForest, K-Nearest-Neighbours and Linear Regression models. 
 
-The k-nearest neighbors algorithm, also known as KNN or k-NN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
+Take a look at the python notebook and further anotations here
 
-Model to determine importance of features
-
-Take a look at my python notebook and further anotations here
-
-
-
-
-Decision Tree Regression Model
-Already being fairly content with my KNN model, I only planned to briefly dip into decision trees. With the base model returning an accuracy of 64%, 8% worse than the KNN, I was more than happy to move on.
-
-
-
-Random Forest Regression Model
-To determine feature importance one could've based their answer on a correlation matrix. We as a agency, however, have to keep our standards high, which is why I opted for a ensemble method of the Random Forest Regressor. I then ran the model through a inspection method, which gave me my final results. Screenshot 2022-05-12 at 17 47 27
-
-
-______________________________________________________
   
-Organization
-Jupyter Notebooks for data exploration, visualization, analysis and machine learning model implementations.
-Tableau Public for dynamic and presentable graphics and charts.
-GitHub for repositories and data files.
+# 5.Tools and Organization
+
+Python - Jupyter Notebooks for prediction and machine learning model implementations.
+Tableau Public and Google Slides for visualization and analysis, dynamic and presentable graphics and charts.
+Excel 
 Google Slides for the presentation.
+GitHub for repositories and data files.
 
-Key Take Aways
-Model for estimating price:
-With an accuracy of 72.25% and a RSME of $195k the model is fairly accurate, but no where close for us, TheAgency, to solemnly rely on it for price determination.
 
-Model to determine importance of features
-Here the results seem alot more promising, as wee gained a clear guideline as to which features determine high prices.
+# 6. Conclusion
 
-Overall conclusion
 I believe the two models to be of good aid for our new office in Seattle, especially the ladder. I can see us scanning the real estate market for the determined features, and calculating a rough price range, before sending out one of our agents. Because in the end, little beats the judgement and expertise of a TheAgency's agent.
+
+
