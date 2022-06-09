@@ -42,7 +42,7 @@ To explore the data we used, Tableau, a visualization software that allowed us u
 <a id='section3'></a>
 # 3. Statistical Modeling
 
-Our first approach to estimate volume was through statistical modeling. The ARIMA model for example, predicts future values purely based on existing patterns. Given the seasonal fluctuations in the demand of liquor, we advanced our model to be able to capture said fluctuations, i.e. SARIMA.
+Our first approach to estimate volume was through statistical modeling. The **ARIMA** model for example, predicts future values purely based on existing patterns. Given the seasonal fluctuations in the demand of liquor, we advanced our model to be able to capture said fluctuations, i.e. **SARIMA**.
 
 <a id='section4'></a>
 # 4. Machine Learning Process
@@ -59,11 +59,11 @@ Ultimately we added a feature matching the seasons of the year given the seasona
   
 With our expanded data set we were ready to head into the modeling process. 
 
-We started by boosting our data through selecting the most important features. This we accomplished by using the feature importances method of the random forest regression. 
+We started by **boosting** our data through selecting the most important features. This we accomplished by using the feature importances method of the random forest regression. 
 
 In the second step we used the same model to create our first forecast.  The data we receive from bacardi only spanned over the course of three years, thus making it hard to set up a proper train and test scenario. 
 
-Because of this we decided to stabilise our model as far as possible via ###stacking###. Through this process we combined the regression models: RandomForest, K-Nearest-Neighbours and Linear Regression. 
+Because of this we decided to stabilise our model as far as possible via **stacking**. Through this process we combined the regression models: RandomForest, K-Nearest-Neighbours and Linear Regression. 
 
 
 [View our python notebook here](https://github.com/LucasTrost/Ironhack-Final-Project-Bacardi/blob/main/Python%20Notebook/Bacardi_Creating_Model.ipynb)
