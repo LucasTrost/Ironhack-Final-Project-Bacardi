@@ -36,7 +36,7 @@ We also adjusted the scope of our project by excluding the US market from our an
 
 To explore the data we used, Tableau, a visualization software that allowed us understand and gain insights about the company's products, markets and   other relevant information.
 
-  ### Proclaimer: 
+  #### Proclaimer: 
  Due to company regulations, data sets will not be published.
 
 <a id='section3'></a>
@@ -44,7 +44,7 @@ To explore the data we used, Tableau, a visualization software that allowed us u
 
 Our first approach to estimate volume was through statistical modeling. The **ARIMA** model for example, predicts future values purely based on existing patterns. Given the seasonal fluctuations in the demand of liquor, we advanced our model to be able to capture said fluctuations, i.e. **SARIMA**.
 
-  *ARIMA Model Forecast*
+  *SARIMA Model Forecast*
 
 <img width="914" alt="ARIMA Model Graph" src="https://user-images.githubusercontent.com/103429801/172800573-db13ace0-d05f-41ae-b40f-c9969ace3a81.png">
 
@@ -77,17 +77,17 @@ Because of this we decided to stabilise our model as far as possible via **stack
 <a id='section5'></a>  
 # 5. Tools
    
-   Python - Jupyter Notebooks for prediction and machine learning model implementations.
+          Python - Jupyter Notebooks for prediction and machine learning model implementations.
 
-   Excel -  Data engineering and pre-processing
+          Excel -  Data engineering and pre-processing
 
-   Tableau Public - Visualizations, analysis, Presentation (project managers)
+          Tableau Public - Visualizations, analysis, Presentation (project managers)
     
-   Google Slides - Presentation template and further contents (diagrams)
+          Google Slides - Presentation template and further contents (diagrams)
 
-   GitHub - Repositories and data files
+          GitHub - Repositories and data files
     
-   Trello Board - Agile project management
+          Trello Board - Agile project management
 
 <a id='section6'></a> 
 # 6. Conclusion
