@@ -5,7 +5,7 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 ### Forecasting Sales Based on the Digital Commerce Channel ###
 ![Bacardi_brands_logo](https://user-images.githubusercontent.com/103429801/172137582-400a5c1e-e295-465b-8fe8-f9429792afdd.jpeg)
 
-**Table of content**
+**Table of contents**
 
   - [Project Brief](#section1)
 
@@ -22,15 +22,15 @@ by Lucas Trost and Miguel Ángel Villoslada, June 2022
 <a id='section1'></a>
 # 1. Project Brief
 
-We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The scope of the project involves building a soundable model to predict sales based on volume. 
+We are working as data analysts for one of the largest privately held, family-owned spirits companies in the world, Bacardi. The projects goal involves building a soundable model to predict sales based on volume. 
 
 Through this work we also aim to identify country specific trends among the company's most represented categories.
 <a id='section2'></a>
 # 2. Data
 
-Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries, which only required minimal cleaning and some forms of reformatting (dropping columns). As the files only included data concerning the fiscal years: 2020, 2021, and 2022, we harnessed data from external sources and applied some extra creativity in order to enhance our model's predictions. 
+Bacardi provided us with Digital Commerce sales data for the US and the Big5 EU countries, which required only minimal cleaning and some forms of reformatting (dropping features). As the files only included data concerning the fiscal years: 2020, 2021, and 2022, we harnessed, and creatively applied, data from external sources, to enhance our model's predictions. 
 
-We also adjusted the scope of our project by excluding the US marlet from our analysis.
+We also adjusted the scope of our project by excluding the US market from our analysis.
 
   ### 2.1 Exploratory Data Analysis (EDA)
 
@@ -42,7 +42,7 @@ To explore the data we used, Tableau, a visualization software that allowed us u
 <a id='section3'></a>
 # 3. Statistical Modeling
 
-Our first approach to estimate volume was through statistical models. The ARIMA model predicts future values based on past volumes. Given the seasonality patterns eexisting in this particular industry, we advanced our model to capture the concept of seasonal trends, ie. SARIMA.
+Our first approach to estimate volume was through statistical modeling. The ARIMA model for example, predicts future values purely based on existing patterns. Given the seasonal fluctuations in the demand of liquor, we advanced our model to be able to capture said fluctuations, i.e. SARIMA.
 
 <a id='section4'></a>
 # 4. Machine Learning Process
