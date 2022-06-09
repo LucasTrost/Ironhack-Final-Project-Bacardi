@@ -44,6 +44,11 @@ To explore the data we used, Tableau, a visualization software that allowed us u
 
 Our first approach to estimate volume was through statistical modeling. The **ARIMA** model for example, predicts future values purely based on existing patterns. Given the seasonal fluctuations in the demand of liquor, we advanced our model to be able to capture said fluctuations, i.e. **SARIMA**.
 
+  *ARIMA Model Forecast*
+
+<img width="914" alt="ARIMA Model Graph" src="https://user-images.githubusercontent.com/103429801/172800573-db13ace0-d05f-41ae-b40f-c9969ace3a81.png">
+
+
 <a id='section4'></a>
 # 4. Machine Learning Process
 
