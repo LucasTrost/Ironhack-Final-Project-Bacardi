@@ -1,6 +1,6 @@
 # Ironhack Final Project | Bacardi #
 
-by Lucas Trost and Miguel Ángel Villoslada, June 2022
+by [Lucas Trost](https://github.com/LucasTrost) and [Miguel Ángel Villoslada](https://github.com/MiguelVilloslada), June 2022
 
 ### Forecasting Sales Based on the Digital Commerce Channel ###
 ![Bacardi_brands_logo](https://user-images.githubusercontent.com/103429801/172137582-400a5c1e-e295-465b-8fe8-f9429792afdd.jpeg)
