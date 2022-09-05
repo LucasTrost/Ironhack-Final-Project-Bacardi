@@ -60,7 +60,7 @@ One of our main datasources was Bloomberg, which we used to gather consumer conf
 
 Ultimately we added a feature matching the seasons of the year given the seasonality nature of the demand and sales for the industry.   
 
-  ### 4.1 Modeling
+  ### 4.2 Modeling
   
 With our expanded data set we were ready to head into the modeling process. 
 
